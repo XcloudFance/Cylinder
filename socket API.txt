@@ -1,0 +1,16 @@
+关于青荇后台的通讯socketAPI
+统一用JSON进行交互
+001:从白鲸请求到西琳注册
+{
+    "id": "001",
+    "ip": "127.0.0.1",
+    "port": "1001"
+}
+//注意:这里的port指的是白鲸上部署的socketserver，socketserver用来接收信息，socket用来发送信息
+//注意:一般只有成功回馈才会从socket取回结果
+002:成功回馈（用于白鲸成功注册和一些请求的成功返回结果）
+{
+    "id": "002",
+    "content": "success"
+}
+//西琳白鲸青荇红莲通通配备一个socketserver长期挂载和一个socket进行发送信息
