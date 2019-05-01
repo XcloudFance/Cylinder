@@ -2,7 +2,6 @@ import socketserver
 import json
 # 自定义类来实现通信循环
 class MyTCPHandler(socketserver.BaseRequestHandler):
-    # 必须写入handle方法，建立链接时会自动执行handle方法
     def handle(self):
         while True:
             try:
@@ -18,5 +17,5 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
  
 if __name__ == '__main__':
     server = socketserver.ThreadingTCPServer(('127.0.0.1', 8080), MyTCPHandler)
-    server.serve_forever()  # 链接循环
+    server.serve_forever()
 
