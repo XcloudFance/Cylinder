@@ -1,4 +1,5 @@
 ﻿#-*- coding:utf-8 -*-
+#encoding:utf-8
 import os
 import sys
 import urllib
@@ -33,8 +34,8 @@ dictlist={}
 def mainly():
     #print(delcssjs("<style>2333</style>123"))
     headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0'}
-    url = "https://sina.com.cn"
-  #  req = urllib.request.Request(url=url, headers=headers)
+    url = "https://www.baidu.com/"
+  #  req = urll:ib.request.Request(url=url, headers=headers)
     geturl=[url]
     #geturl = gethtmurl(url)
     #dictlist[url] = get_content(str(urllib.request.urlopen(req).read().decode('utf-8',"ignore")))
@@ -76,4 +77,5 @@ def test():
 if(__name__ == "__main__"):
     test()
     mainly()
-                                                                                                            
+
+
